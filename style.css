@@ -1,0 +1,143 @@
+:root {
+    --bg-creme: #f4ece2;       /* Fundo principal da imagem */
+    --bg-white: #faf7f2;       /* Fundo do banner */
+    --accent-brown: #6b4d3d;   /* Marrom escuro dos botões e textos */
+    --text-muted: #8e7a6f;     /* Texto secundário */
+    --font-main: 'Playfair Display', serif; /* Serifada elegante */
+    --font-sans: 'Montserrat', sans-serif;  /* Sans para corpo */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-creme);
+    font-family: var(--font-sans);
+    color: var(--accent-brown);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- Header & Nav --- */
+.top-bar {
+    border-bottom: 1px solid rgba(107, 77, 61, 0.1);
+    padding: 10px 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.social-icons a {
+    margin-left: 15px;
+    color: var(--accent-brown);
+    font-size: 14px;
+}
+
+.navbar {
+    padding: 25px 0;
+}
+
+.logo h1 {
+    font-family: var(--font-main);
+    font-size: 32px;
+    letter-spacing: -1px;
+}
+
+.logo span { color: var(--text-muted); }
+
+.nav-links { display: flex; gap: 35px; }
+
+.nav-links a {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--accent-brown);
+}
+
+/* --- Botões --- */
+.ladygaga {
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 12px;
+    transition: 0.3s;
+    display: inline-block; /* Importante para que a margem funcione corretamente */
+    margin-top: 10px; 
+    padding: 12px 30px;
+
+}
+
+.primary-cta {
+    background: var(--accent-brown);
+    color: white;
+}
+
+.ladygaga {
+    border: 2px solid var(--accent-brown);
+    color: var(--accent-brown);
+}
+
+/* --- Banner (O "Coração" da Inspiração) --- */
+.banner {
+    height: 85vh;
+    background-color: var(--bg-white);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 20px;
+    border-radius: 5px;
+}
+
+.banner-content {
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.banner-text h2 {
+    font-family: var(--font-main);
+    font-size: 64px;
+    line-height: 1.1;
+    margin: 20px 0;
+    
+}
+
+.subtitle {
+    font-size: 12px;
+    letter-spacing: 5px;
+    color: var(--text-muted);
+}
+
+/* Elementos flutuantes simulando as fotos da imagem */
+.element {
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    filter: grayscale(20%);
+}
+
+.e1 { width: 250px; height: 300px; left: -50px; top: 10%; background-image: url('seu-projeto-1.jpg'); transform: rotate(-5deg); }
+.e2 { width: 180px; height: 180px; left: 10%; bottom: 10%; background-image: url('sua-foto.jpg'); border-radius: 50%; }
+.e3 { width: 300px; height: 250px; right: -40px; top: 15%; background-image: url('seu-projeto-2.jpg'); transform: rotate(8deg); }
+.e4 { width: 200px; height: 280px; right: 5%; bottom: -50px; background-image: url('seu-projeto-3.jpg'); }
+
+@media (max-width: 768px) {
+    .nav-links, .top-bar { display: none; }
+    .banner-text h2 { font-size: 40px; }
+    .element { opacity: 0.3; } /* Suaviza as imagens no mobile */
+}
