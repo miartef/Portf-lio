@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnico - Portfólio Milena</title>
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos globais -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="matérias.css">
+</head>
+<body>
+    <!-- Mesma Navbar da Home -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Milena Duarte<span>.</span></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#matérias">matérias</a></li>
+
+                    <li><a href="index.html#servicos">Currículo</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+                <a href="index.html#contato" class="ladygaga" style="margin-top: 0;">FALE COMIGO</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner igual ao da Home, mas sem as fotos flutuando -->
+    <section class="banner" style="height: auto; padding: 150px 0 80px 0;">
+        <div class="container banner-content">
+            <div class="banner-text">
+                <a href="index.html#matérias" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar</a>
+                <p class="subtitle">Desenvolvimento de Sistemas</p>
+                <!-- Título com a mesma fonte e estilo -->
+                <h2 style="font-family: var(--font-title); font-size: 64px; color: var(--text-main); margin: 20px 0;">Técnico</h2>
+                
+                <!-- Caixa marrom de texto igual da home -->
+                <p class="description">
+                    Aqui você pode acompanhar as atividades, projetos e aprendizados da área de desenvolvimento de sistemas.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de cards igual a da Home para listar as atividades -->
+    <section class="cards-section" style="padding-top: 50px;">
+        <div class="container cards-container" style="display: flex; justify-content: center; align-items: center; min-height: 300px;">
+            
+            <!-- Atividade 1 -->
+            <div class="card" style="margin-top: 0; max-width: 800px; width: 100%;">
+                <div class="card-content" style="padding: 60px 40px; text-align: center;">
+                    <h3 style="font-family: var(--font-main); font-size: 48px; margin-bottom: 20px; color: var(--text-main);">Grand Prix</h3>
+                    <p style="color: var(--text-muted); font-size: 20px; line-height: 1.6; margin-bottom: 35px;">
+                        Projeto Grand Prix SENAI<br>
+                        <b style="font-size: 16px;">Modelagem de Sistemas e Desenvolvimento web.</b>
+                    </p>
+                    <a href="#" class="selenagomez open-modal-btn" style="padding: 15px 40px; font-size: 18px;">Ver Projeto</a>
+                </div>
+            </div>
+            
+
+
+        </div>
+    </section>
+
+    <!-- Modal de Projeto (Sobreposição) -->
+    <div id="projectModal" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                
+                <!-- Slide 1 -->
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Sistemas</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 64px;">Grand Prix</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">SENAI</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            Pitch Grand Prix. Realizamos um projeto do SENAI de Inovação chamado grand prix, onde solucionamos um desafio designado a nossa equipe. Nosso desafio foi da Petrobras Descarbonização, Eficiência Energética e Performance Sustentável. O Grand Prix SENAI 2026 é uma competição de inovação aberta que une criatividade, colaboração e empreendedorismo para enfrentar desafios reais propostos por empresas e organizações.<br><br>
+                            Link do <a href="https://canva.link/sjpoqmpefi54brm" target="_blank" style="color: var(--bg-white); text-decoration: underline;">Lean Canva</a>
+                        </p>
+                        <div class="carousel-nav" style="display: none;">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; align-items: center; justify-content: center;">
+                        <div style="position: relative; width: 100%; aspect-ratio: 16/9; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe src="https://www.youtube.com/embed/CZZmJzWEinw?si=dRH4DRLXIRHUCazU" title="YouTube video player" frameborder="0" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seu Nome | Portfolio</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <title>Milena | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="main-header">
         <div class="top-bar">
             <div class="container">
-                <span class="top-info">DISPONÍVEL PARA NOVOS PROJETOS</span>
+                <span class="top-info">Class of 2026</span>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#"><i class="fab fa-github"></i></a>
@@ -20,20 +26,20 @@
                 </div>
             </div>
         </div>
-        
+
         <nav class="navbar">
             <div class="container">
                 <div class="logo">
-                    <h1>DESIGNER<span>.</span></h1>
+                    <h1>Milena Duarte<span>.</span></h1>
                 </div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#matérias">matérias</a></li>
+
+                    <li><a href="#curriculo">Currículo</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
-                <a href="#contato" class="cta-button primary-cta">FALE COMIGO</a>
+                <a href="#contato" class="ladygaga" style="margin-top: 0;">FALE COMIGO</a>
             </div>
         </nav>
     </header>
@@ -41,21 +47,172 @@
     <section id="home" class="banner">
         <div class="floating-elements">
             <div class="element e1"><img src="foto1.png" alt="fotoprimeiro"></div>
-            <div class="element e2"><img src="foto2.png" alt="fotosegundo"></div>
+            <div class="element e2"><img src="foto2.jpg" alt="fotosegundo"></div>
             <div class="element e3"><img src="foto3.png" alt="fototerceiro"></div>
             <div class="element e4"><img src="foto4.png" alt="fotocuarto"></div>
         </div>
 
         <div class="container banner-content">
             <div class="banner-text">
-                <p class="subtitle">CRIATIVIDADE & ESTRATÉGIA</p>
-                <h2>Soluções Digitais,<br>Feitas para Você!</h2>
-                <p class="description">Transformo ideias em experiências visuais memoráveis e funcionais.</p>
-                <a href="#projetos" class="ladygaga">VER PORTFÓLIO</a>
+                <p class="subtitle">Seja muito bem-vindo(a) ao</p>
+                <h2 id="meu-portfolio">Meu portfólio</h2>
+                <span style="margin-top: -80px; margin-bottom: 40px; position: relative; z-index: 2; font-family: var(--font-main); font-weight: bold; font-size: 14px; color: var(--accent-brown); letter-spacing: 2px; text-transform: uppercase;">sobre mim</span>
+                <p class="description">Meu nome é Milena Duarte de Freitas, tenho 17 anos e estou no ensino médio. Nasci em Sapucaia do Sul - RS mas minha familía é de 
+                    Porto Alegre e Canoas. Desde pequena sempre fui muito apaixonada por música, bandas indies e uma das minhas favoritas é o wave to earth. Amo flores (principalmente girassól e rosa branca) e fotografia. Estudo na Escola Sesi Florianópolis
+                     e ja fiz parte da Equipe de Robótica F1 In schools da escola,
+                     a Team Curie. Me apaixonei pela robótica assim que entrei na escola e no futuro, quero ser juíza das competições. Ainda tenho dúvidas de qual carreira seguir no futuro, mas com certeza quero ajudar as pessoas de alguma forma!
+</p>
             </div>
         </div>
     </section>
 
+    <section id="matérias" class="cards-section">
+        <div class="container cards-container">
+            <div class="card">
+                <div class="card-image-placeholder">
+                    <img src="concha.png" alt="Técnico" onerror="this.src='https://via.placeholder.com/400x250/e6d5c0/5b3602?text=Foto+Técnico'">
+                </div>
+                <div class="card-content">
+                    <h3 class="arc-title">Técnico</h3>
+                    <p>Atividades de desenvolvimento de sistemas.</p>
+                    <a href="técnico.html" class="selenagomez">Ver Detalhes</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-image-placeholder">
+                    <img src="flor.png" alt="Matérias" onerror="this.src='https://via.placeholder.com/400x250/e6d5c0/5b3602?text=Foto+Matérias'">
+                </div>
+                <div class="card-content">
+                    <h3 class="arc-title">Matérias</h3>
+                    <p>Atividades do ensino médio.</p>
+                    <a href="matérias.html" class="selenagomez">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Currículo Section -->
+    <section id="curriculo" class="curriculo-section" style="padding: 80px 0; background-color: var(--bg-white); margin: 20px 20px 20px 20px; border-radius: 5px;">
+        <div class="container" style="flex-direction: column; align-items: flex-start;">
+            <!-- Layout duas colunas -->
+            <div style="display: flex; flex-wrap: wrap; gap: 60px; align-items: flex-start; width: 100%;">
+
+                <!-- Coluna Esquerda: Canva Currículo -->
+                <div style="flex: 1 1 300px; max-width: 400px; min-width: 0; text-align: left;">
+                    <div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform;">
+                        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" src="https://www.canva.com/design/DAGlZejCyVQ/Z0tNOWnoE01RJbHCdNmdWA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                        </iframe>
+                    </div>
+                    <a href="https://www.canva.com/design/DAGlZejCyVQ/Z0tNOWnoE01RJbHCdNmdWA/view?utm_content=DAGlZejCyVQ&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener" style="color: var(--accent-brown); text-decoration: underline; font-size: 14px;">Currículo Vitae</a>
+                </div>
+
+                <!-- Coluna Direita: Texto -->
+                <div style="flex: 2 1 300px; min-width: 0; text-align: left; display: flex; flex-direction: column; justify-content: flex-start; margin-top: -10px;">
+                    <h2 style="font-family: var(--font-main); font-size: 48px; color: var(--accent-brown); margin-bottom: 20px; width: 100%;">Meu Currículo</h2>
+                    <p style="color: var(--text-muted); font-size: 18px; line-height: 1.8; width: 100%;">
+                        Portfólio criado na matéria de mundo do trabalho em 2024. Com esse currículo consegui empregos que me ajudaram muito na minha formação profissional.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato Section -->
+    <section id="contato" class="contato-section" style="padding: 100px 0; background-color: var(--bg-creme);">
+        <div class="container" style="justify-content: center;">
+            <div class="contato-box" style="background-color: var(--bg-white); padding: 50px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); max-width: 800px; width: 100%; text-align: center; position: relative;">
+
+                <!-- Foto no canto superior direito -->
+                <div style="position: absolute; top: -120px; right: -100px; width: 200px; height: 240px; border-radius: 12px; overflow: hidden; transform: rotate(5deg);">
+                    <img src="elemento1.png" alt="foto" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <!-- Foto na borda inferior esquerda -->
+                <div style="position: absolute; bottom: -120px; left: -100px; width: 200px; height: 240px; border-radius: 12px; overflow: hidden; transform: rotate(-5deg);">
+                    <img src="elemento7.png" alt="foto2" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <h2 style="font-family: var(--font-main); font-size: 48px; color: var(--accent-brown); margin-bottom: 20px;">Contato</h2>
+                <p style="color: var(--text-muted); font-size: 16px; margin-bottom: 30px;">Tem alguma dúvida ou quer bater um papo? Me mande uma mensagem!</p>
+
+                <!-- Ícones de contato -->
+                <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+                    <a href="https://www.instagram.com/miartef?igsh=MjZjMXNhbWE5M2c3&utm_source=qr" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 10px; color: var(--accent-brown); text-decoration: none; font-size: 15px; font-weight: 600; transition: opacity 0.2s;">
+                        <span style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--bg-creme); display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <i class="fab fa-instagram"></i>
+                        </span>
+                        Instagram
+                    </a>
+                    <a href="https://github.com/miartef" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 10px; color: var(--accent-brown); text-decoration: none; font-size: 15px; font-weight: 600; transition: opacity 0.2s;">
+                        <span style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--bg-creme); display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <i class="fab fa-github"></i>
+                        </span>
+                        GitHub
+                    </a>
+                    <a href="https://w.app/bqgdne" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 10px; color: var(--accent-brown); text-decoration: none; font-size: 15px; font-weight: 600; transition: opacity 0.2s;">
+                        <span style="width: 44px; height: 44px; border-radius: 50%; background-color: var(--bg-creme); display: flex; align-items: center; justify-content: center; font-size: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                            <i class="fas fa-phone"></i>
+                        </span>
+                        (48) 99128-3738
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Faixa Divisória -->
+    <div style="background-color: var(--accent-brown); width: 100%; padding: 15px 0; text-align: center; border-top: 2px solid var(--bg-creme); border-bottom: 2px solid var(--bg-creme);">
+        <h2 style="font-family: var(--font-main); font-style: italic; color: var(--bg-white); font-size: 32px; margin: 0; font-weight: 400; letter-spacing: 3px;">Galeria</h2>
+    </div>
+
+    <section id="galeria" style="padding: 80px 0; background-color: var(--bg-white);">
+        <div class="container" style="max-width: 900px;">
+            <div class="gallery-wrapper" style="display: flex; flex-wrap: wrap; gap: 60px; justify-content: center;">
+                
+                <!-- Gammy Slider -->
+                <div class="gallery-column" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="image-slider-box" id="gammy-slider">
+                        <div class="slider-slides">
+                            <img src="gammy1.png" class="active" alt="Gammy 1" onerror="this.style.display='none'">
+                            <img src="gammy2.png" alt="Gammy 2" onerror="this.style.display='none'">
+                            <img src="gammy3.png" alt="Gammy 3" onerror="this.style.display='none'">
+                            <img src="gammy4.png" alt="Gammy 4" onerror="this.style.display='none'">
+                            <img src="gammy5.png" alt="Gammy 5" onerror="this.style.display='none'">
+                            <img src="gammy6.png" alt="Gammy 6" onerror="this.style.display='none'">
+                            <img src="gammy7.png" alt="Gammy 7" onerror="this.style.display='none'">
+                            <img src="gammy8.png" alt="Gammy 8" onerror="this.style.display='none'">
+                        </div>
+                        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <h3 class="arc-title" style="margin-top: 30px;">Gammy</h3>
+                </div>
+
+                <!-- Amor Slider -->
+                <div class="gallery-column" style="display: flex; flex-direction: column; align-items: center;">
+                    <div class="image-slider-box" id="amor-slider">
+                        <div class="slider-slides">
+                            <img src="mor1.png" class="active" alt="Amor 1" onerror="this.style.display='none'">
+                            <img src="mor2.png" alt="Amor 2" onerror="this.style.display='none'">
+                            <img src="mor3.png" alt="Amor 3" onerror="this.style.display='none'">
+                            <img src="mor4.png" alt="Amor 4" onerror="this.style.display='none'">
+                            <img src="mor5.png" alt="Amor 5" onerror="this.style.display='none'">
+                            <img src="mor6.png" alt="Amor 6" onerror="this.style.display='none'">
+                        </div>
+                        <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                        <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <h3 class="arc-title" style="margin-top: 30px;">Amor</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>

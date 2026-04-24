@@ -1,0 +1,28 @@
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--accent-brown);
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: -15px;
+    margin-top: -10px;
+    margin-right: auto;
+    transition: all 0.3s ease;
+    padding: 8px 18px;
+    border-radius: 50px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: fit-content;
+}
+
+.back-btn:hover {
+    transform: translateX(-5px);
+    background: rgba(139, 69, 19, 0.1);
+}
+
+.back-btn i {
+    font-size: 1rem;
+}

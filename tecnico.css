@@ -1,0 +1,198 @@
+/* --- Estilos para a Vibe Bakery Shop --- */
+
+body {
+    background-color: var(--bg-creme);
+    overflow-x: hidden;
+}
+
+.tecnico-hero {
+    position: relative;
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Formas orgânicas no fundo (Blobs) */
+.blob {
+    position: absolute;
+    background-color: var(--accent-brown);
+    border-radius: 50%;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.blob-1 {
+    width: 350px;
+    height: 350px;
+    bottom: -150px;
+    left: -100px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+}
+
+.blob-2 {
+    width: 500px;
+    height: 500px;
+    bottom: -100px;
+    right: -200px;
+    border-radius: 50% 50% 30% 70% / 50% 50% 70% 50%;
+    opacity: 0.2; 
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2; /* Ficar acima dos blobs */
+}
+
+/* Lado do Texto */
+.hero-text-side {
+    flex: 1;
+    max-width: 550px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: var(--accent-brown);
+    color: var(--bg-white);
+    padding: 6px 20px;
+    border-radius: 20px;
+    font-family: var(--font-main);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.hero-title {
+    font-family: var(--font-title);
+    font-size: 80px;
+    color: var(--text-main);
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.hero-divider {
+    height: 2px;
+    width: 180px;
+    background-color: var(--text-main);
+    margin: 15px 0;
+}
+
+.hero-subtitle {
+    font-family: var(--font-main);
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--text-main);
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-family: var(--font-main);
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.btn-link {
+    color: var(--text-main);
+    text-decoration: none;
+    font-family: var(--font-main);
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.btn-link:hover {
+    color: var(--accent-brown);
+}
+
+.hero-social {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--accent-brown);
+    color: var(--bg-white);
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+}
+
+.hero-social a:hover {
+    transform: translateY(-5px);
+}
+
+/* Lado da Imagem */
+.hero-image-side {
+    flex: 1;
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-img {
+    position: absolute;
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.15));
+    animation: float 6s ease-in-out infinite;
+}
+
+.img-1 {
+    width: 350px;
+    z-index: 2;
+    top: 20px;
+}
+
+.img-2 {
+    width: 280px;
+    right: 20px;
+    bottom: 20px;
+    animation-delay: 1.5s;
+    z-index: 1;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(3deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@media (max-width: 900px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero-divider {
+        margin: 15px auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-social {
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}

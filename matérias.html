@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matérias - Portfólio Milena</title>
+    <!-- Fontes e Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Estilos globais -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="matérias.css">
+</head>
+<body>
+    <!-- Mesma Navbar da Home -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Milena Duarte<span>.</span></h1>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#matérias">matérias</a></li>
+
+                    <li><a href="index.html#servicos">Currículo</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+                <a href="index.html#contato" class="ladygaga" style="margin-top: 0;">FALE COMIGO</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner igual ao da Home, mas sem as fotos flutuando -->
+    <section class="banner" style="height: auto; padding: 150px 0 80px 0;">
+        <div class="container banner-content">
+            <div class="banner-text">
+                <a href="index.html#matérias" class="back-btn"><i class="fas fa-arrow-left"></i> Voltar</a>
+                <p class="subtitle">Meus estudos e desempenhos nas</p>
+                <!-- Título com a mesma fonte e estilo -->
+                <h2 style="font-family: var(--font-title); font-size: 64px; color: var(--text-main); margin: 20px 0;">Matérias</h2>
+                
+                <!-- Caixa marrom de texto igual da home -->
+                <p class="description">
+                    Aqui você pode acompanhar meu desempenho, notas e os principais projetos e trabalhos que desenvolvi nas minhas matérias favoritas na escola!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de cards igual a da Home para listar as atividades -->
+    <section class="cards-section" style="padding-top: 50px;">
+        <div class="container cards-container" style="flex-wrap: wrap;">
+            
+            <!-- Área de Humanas -->
+            <div class="card" style="margin-top: 0;">
+                <div class="card-content" style="padding: 40px 30px;">
+                    <h3 style="font-family: var(--font-main); font-size: 32px; margin-bottom: 15px; color: var(--text-main);">Humanas</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 25px;">Atividades, projetos e conhecimentos desenvolvidos na área de Ciências Humanas.</p>
+                    <a href="#" class="selenagomez open-modal-btn" data-modal="modalHumanas">1° trimestre</a>
+                </div>
+            </div>
+            
+            <!-- Área de Linguagens -->
+            <div class="card" style="margin-top: 0;">
+                <div class="card-content" style="padding: 40px 30px;">
+                    <h3 style="font-family: var(--font-main); font-size: 32px; margin-bottom: 15px; color: var(--text-main);">Linguagens</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 25px;">Atividades, projetos e conhecimentos desenvolvidos na área de Linguagens e Códigos.</p>
+                    <a href="#" class="selenagomez open-modal-btn" data-modal="modalLinguagens">1° trimestre</a>
+                </div>
+            </div>
+
+            <!-- Área de Natureza -->
+            <div class="card" style="margin-top: 0;">
+                <div class="card-content" style="padding: 40px 30px;">
+                    <h3 style="font-family: var(--font-main); font-size: 32px; margin-bottom: 15px; color: var(--text-main);">Natureza</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 25px;">Atividades, projetos e conhecimentos desenvolvidos na área de Ciências da Natureza.</p>
+                    <a href="#" class="selenagomez open-modal-btn" data-modal="modalNatureza">1° trimestre</a>
+                </div>
+            </div>
+
+            <!-- Área de Matemática -->
+            <div class="card" style="margin-top: 0;">
+                <div class="card-content" style="padding: 40px 30px;">
+                    <h3 style="font-family: var(--font-main); font-size: 32px; margin-bottom: 15px; color: var(--text-main);">Matemática</h3>
+                    <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 25px;">Atividades, projetos e conhecimentos desenvolvidos na área de Matemática.</p>
+                    <a href="#" class="selenagomez open-modal-btn" data-modal="modalMatematica">1° trimestre</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal Humanas -->
+    <div id="modalHumanas" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Escola</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 64px;">Geopolítica</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Habilidades Avaliadas: C1 ao C12</strong><br>
+                            Descrição: comparar as diferentes realidades entre nações e compreender melhor sobre a condição geopolítica de cada país.<br>
+                            <em>Feedback: Gostei da atividade!</em>
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://www.canva.com/design/DAHBNNaCgWs/2ESptS_kLNnj_gVEoGNiSg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide" style="display: none; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Escola</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 54px;">Jornal de Humanas</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Habilidades Avaliadas: C3 - H15, H16, H20 - C6 - H39</strong><br>
+                            <em>Feedback: Gostei da atividade!</em>
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://www.canva.com/design/DAHFtV-RA0Q/NtMPdIOu8FmTuL395tyRSg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide" style="display: none; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Escola</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 48px;">Neocolonialismo</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            Realizamos uma atividade que narra a trajetória histórica de um país colonizado após a 2ª Revolução Industrial. Utilizando uma sequência de cinco imagens editadas (fotos, mapas e desenhos). O objetivo foi compreender o impacto da colonização industrial na formação histórica do país escolhido.<br><br>
+                            <strong>Habilidades avaliadas:</strong> C2 - H8, H10, H12
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://docs.google.com/document/d/e/2PACX-1vRp-RVqb4kRqk0qEvBmY3X5jUc7fZLixZrp4aADWWGnXBGPEalZgBbtFrfbR6ZR_pFqix8isJjzO9dw/pub?embedded=true" allowfullscreen="allowfullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Linguagens -->
+    <div id="modalLinguagens" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                
+                <!-- Slide 1: Atividade Canva -->
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Linguagens</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 54px;">Jogo literário</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            H15 - Produzir trabalhos individuais e coletivos, explorando materiais e técnicas
+                            ligados ao universo das composições artísticas e de práticas corporais.
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://www.canva.com/design/DAHHldk70s0/hcP7WtjnN1vEa8Vg4MRlUg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide" style="display: none; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Linguagens</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 48px;">Sociologia em Paixão segundo GH</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Habilidades Avaliadas: H4 e H22</strong><br>
+                            Nessa atividade explicamos como funcionava a sociologia na Obra.<br>
+                            <em>Feedback: Gostei bastante da atividade, foi bem legal fazer o vídeo.</em>
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://www.canva.com/design/DAHFCgcj82o/swzynf_V_P_vGalfOEu1ng/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Natureza -->
+    <div id="modalNatureza" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                
+                <!-- Slide 1 -->
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Natureza</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 54px;">Meme Evolucionismo</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px; font-size: 14px;">
+                            Este meme de quatro painéis faz uma paródia da teoria da evolução, sugerindo de forma humorística que a seleção natural também se aplica à música, com Darwin tocando guitarra e celebrando a "evolução dos acordes".<br><br>
+                            <strong>Habilidades Avaliadas:</strong><br>
+                            C3 - Determinar os impactos das ações humanas nos ambientes, identificando suas causas e propondo soluções para a sua redução.<br>
+                            H15 - Comparar propostas de intervenção ambiental aplicando conhecimentos científicos e tecnológicos, observando os riscos e benefícios de sua implementação.<br>
+                            H18 - Identificar situações de risco ambiental na cidade onde reside.
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://www.canva.com/design/DAHHrADb9U0/EYaJPSNi1sjMy3H8hu8s6g/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide" style="display: none; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Natureza</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 54px;">Seminário Natureza</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            Para o nosso seminário sobre dependência energética global, investigamos se o mundo de hoje sobreviveria sem combustíveis fósseis. Analisamos os setores mais dependentes, as razões científicas para o seu uso massivo e as barreiras tecnológicas e estruturais para a transição. Por fim, debatemos as consequências de um fim abrupto do seu uso e se a nossa dependência é uma escolha ou uma inevitabilidade.<br><br>
+                            <strong>Habilidades trabalhadas:</strong><br>
+                            C1: Entender a ciência e a tecnologia como construções humanas<br>
+                            C2: Aplicar conceitos científicos para explicar fenômenos do cotidiano<br>
+                            H9: Compreender energia e suas transformações<br>
+                            H11: Investigar, levantar hipóteses e tirar conclusões<br>
+                            H1: Interpretar diferentes formas de informação (textos, gráficos, dados)
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://www.canva.com/design/DAHE886JkV4/qRw-Yb2ym9rOJY0XrYvXOg/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide" style="display: none; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Natureza</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 48px;">Relatório Experimental</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            Fizemos um relatório sobre o experimento que realizamos em aula. O objetivo era ver quem conseguia mover uma pequena bolinha de metal, que estava equilibrada sobre uma superfície, ao longo de uma trajetória pré-definida no menor tempo possível. A regra principal e mais desafiadora era: não podíamos tocar na bolinha com nada.<br><br>
+                            <strong>Habilidades Trabalhadas:</strong><br>
+                            C1 - Compreender as ciências naturais e as tecnologias como construções humanas associadas à cultura dos povos e suas visões de mundo.<br>
+                            H1 - Interpretar informações apresentadas em diferentes linguagens usadas nas Ciências, como texto discursivo, gráficos, tabelas, relações matemáticas, diagramas ou representação simbólica.<br>
+                            C2 - Aplicar os conceitos fundamentais e estruturas procedimentais das Ciências da Natureza na explicação de fenômenos cotidianos, bem como dominar processos e práticas da investigação científica.<br>
+                            H7 - Compreender os conceitos relacionados à Química nos seus diferentes ramos: Fisico-química, Química orgânica e Química Geral.<br>
+                            H9 - Explicar os conceitos de energia, matéria, vida e transformação para explicar fenômenos naturais e procedimentos tecnológicos.<br>
+                            H11 - Empregar procedimentos e práticas de observação, levantamento de hipótese, experimentação, coleta de dados e conclusões para resolução de problemas relacionados às Ciências da Natureza.<br>
+                            H12 - Relacionar informações para construir modelos em ciência e tecnologia.
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://docs.google.com/document/d/e/2PACX-1vSi76MOP3SXeP88tvapqcnMth-KpHMEt38pknFovq1ppJgQSNk24oaT7CAfjEFFzpF_gKPSrvduByRP/pub?embedded=true" allowfullscreen="allowfullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Matemática -->
+    <div id="modalMatematica" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Matemática</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 54px;">Jogo Matemático</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            O objetivo dessa atividade foi tirar a matemática do papel e levar para a mesa de jogo. A ideia foi usar a Análise Combinatória e a Probabilidade não como fórmulas chatas, mas como "superpoderes" para criar estratégias, calcular riscos e tentar vencer o sistema, exatamente como os personagens fazem nos filmes de cassino.<br><br>
+                            <strong>Habilidades trabalhadas:</strong><br>
+                            C5: Aplicar o pensamento probabilístico para quantificar e fazer previsões em situações aplicadas a diferentes áreas do conhecimento e da vida cotidiana.<br>
+                            H30: Identificar dados, regularidades e relações numa situação que envolva o raciocínio combinatório, utilizando os processos de contagem.<br>
+                            H31: Reconhecer fenômenos e eventos (naturais, científicos, tecnológicos e/ou sociais) de caráter aleatório, compreendendo o significado e a importância da probabilidade como meio de prever resultados.
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://www.canva.com/design/DAHHlZabhkA/7Y9Kqmqd7ymQA2wkbePH-A/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide" style="display: none; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Matemática</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 48px;">Análise: Quebrando a Banca</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            O objetivo dessa atividade foi analisar o filme "Quebrando a Banca" sob a ótica da matemática aplicada. A ideia foi identificar como a Análise Combinatória e a Probabilidade saem dos livros e entram nas mesas de cassino, transformando o jogo de azar em um jogo de estratégia e lógica, além de discutir a ética e as consequências por trás dessas escolhas.<br><br>
+                            <strong>Habilidades trabalhadas:</strong><br>
+                            C5 - Aplicar o pensamento probabilístico para quantificar e fazer previsões em situações aplicadas a diferentes áreas do conhecimento e da vida cotidiana.<br>
+                            H31 - Reconhecer fenômenos e eventos (naturais, científicos, tecnológicos e/ou sociais) de caráter aleatório, compreendendo o significado e a importância da probabilidade como meio de prever resultados.<br>
+                            H32 - Identificar em diferentes áreas científicas e outras atividades práticas modelos e problemas que fazem uso de estatísticas e probabilidades.
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px;">
+                        <div style="position: relative; width: 100%; height: 100%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
+                                src="https://docs.google.com/document/d/e/2PACX-1vSw8S8vr-byOZRCy2pz9ZwPNwVkJt3bcrhqGnLv4efZRYhojTaKjORlYo0Ccz-iH7KNO3cOsWiWpBCF/pub?embedded=true" allowfullscreen="allowfullscreen">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
