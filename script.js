@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
     }
 
-    // Image Slider logic (Galerias Gammy e Amor)
+    // Image Slider logic (Galerias Gammy, Amor e Cartaz)
     const sliderBoxes = document.querySelectorAll('.image-slider-box');
     
     sliderBoxes.forEach(box => {
@@ -97,13 +97,15 @@ document.addEventListener("DOMContentLoaded", function() {
         let currentIdx = 0;
 
         if(slides.length > 0 && nextBtn && prevBtn) {
-            nextBtn.addEventListener('click', () => {
+            nextBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
                 slides[currentIdx].classList.remove('active');
                 currentIdx = (currentIdx + 1) % slides.length;
                 slides[currentIdx].classList.add('active');
             });
 
-            prevBtn.addEventListener('click', () => {
+            prevBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
                 slides[currentIdx].classList.remove('active');
                 currentIdx = (currentIdx - 1 + slides.length) % slides.length;
                 slides[currentIdx].classList.add('active');
