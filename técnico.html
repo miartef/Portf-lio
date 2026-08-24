@@ -49,28 +49,228 @@
         </div>
     </section>
 
-    <!-- Seção de cards igual a da Home para listar as atividades -->
+    <!-- Seção de cards para listar as áreas técnicas -->
     <section class="cards-section" style="padding-top: 50px;">
-        <div class="container cards-container" style="display: flex; justify-content: center; align-items: center; min-height: 300px;">
+        <div class="container cards-container" style="flex-wrap: wrap; justify-content: center; gap: 30px; align-items: stretch;">
             
-            <!-- Atividade 1 -->
-            <div class="card" style="margin-top: 0; max-width: 800px; width: 100%;">
-                <div class="card-content" style="padding: 60px 40px; text-align: center;">
-                    <h3 style="font-family: var(--font-main); font-size: 48px; margin-bottom: 20px; color: var(--text-main);">Grand Prix</h3>
-                    <p style="color: var(--text-muted); font-size: 20px; line-height: 1.6; margin-bottom: 35px;">
-                        Projeto Grand Prix SENAI<br>
-                        <b style="font-size: 16px;">Modelagem de Sistemas e Desenvolvimento web.</b>
-                    </p>
-                    <a href="#" class="selenagomez open-modal-btn" style="padding: 15px 40px; font-size: 18px;">Ver Projeto</a>
+            <!-- Card IoT -->
+            <div class="card" style="margin-top: 0; width: 350px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="card-content" style="padding: 40px 25px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-family: var(--font-main); font-size: 28px; margin-bottom: 15px; color: var(--text-main); min-height: 64px; display: flex; align-items: center; justify-content: center; text-align: center;">IoT</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 25px; text-align: center;">Atividades, projetos e protótipos de Internet das Coisas.</p>
+                    </div>
+                    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                        <a href="#" class="selenagomez locked-btn" style="pointer-events: none; opacity: 0.6; cursor: not-allowed; background: rgba(91,54,2,0.08); display: inline-flex; align-items: center; gap: 6px;">1° trimestre <i class="fas fa-lock"></i></a>
+                        <a href="#" class="selenagomez open-modal-btn" data-modal="modalIoT2">2° trimestre</a>
+                    </div>
                 </div>
             </div>
             
+            <!-- Card Programação de Aplicativos -->
+            <div class="card" style="margin-top: 0; width: 350px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="card-content" style="padding: 40px 25px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-family: var(--font-main); font-size: 28px; margin-bottom: 15px; color: var(--text-main); min-height: 64px; display: flex; align-items: center; justify-content: center; text-align: center;">Programação de aplicativos</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 25px; text-align: center;">Projetos e desenvolvimento de aplicações móveis e web.</p>
+                    </div>
+                    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                        <a href="#" class="selenagomez locked-btn" style="pointer-events: none; opacity: 0.6; cursor: not-allowed; background: rgba(91,54,2,0.08); display: inline-flex; align-items: center; gap: 6px;">1° trimestre <i class="fas fa-lock"></i></a>
+                        <a href="#" class="selenagomez open-modal-btn" data-modal="modalProgApp2">2° trimestre</a>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Card Desenvolvimento de Sistemas -->
+            <div class="card" style="margin-top: 0; width: 350px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="card-content" style="padding: 40px 25px; flex: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                    <div>
+                        <h3 style="font-family: var(--font-main); font-size: 28px; margin-bottom: 15px; color: var(--text-main); min-height: 64px; display: flex; align-items: center; justify-content: center; text-align: center;">Desenvolvimento de sistemas</h3>
+                        <p style="color: var(--text-muted); line-height: 1.6; margin-bottom: 25px; text-align: center;">Atividades e projetos de desenvolvimento de sistemas.</p>
+                    </div>
+                    <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+                        <a href="#" class="selenagomez locked-btn" style="pointer-events: none; opacity: 0.6; cursor: not-allowed; background: rgba(91,54,2,0.08); display: inline-flex; align-items: center; gap: 6px;">1° trimestre <i class="fas fa-lock"></i></a>
+                        <a href="#" class="selenagomez open-modal-btn" data-modal="modalDevSist2">2° trimestre</a>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </section>
 
-    <!-- Modal de Projeto (Sobreposição) -->
+    <!-- Modal IoT 1° Trimestre -->
+    <div id="modalIoT1" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">IoT</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 48px;">Fundamentos de IoT</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            Atividades e conhecimentos práticos desenvolvidos na área de Internet das Coisas durante o 1° trimestre.
+                        </p>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; align-items: center; justify-content: center;">
+                        <p style="color: var(--bg-white); font-family: var(--font-main); text-align: center;">Projetos do 1° Trimestre de IoT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal IoT 2° Trimestre -->
+    <div id="modalIoT2" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                
+                <!-- Slide 1 -->
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">IoT</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 40px;">Protótipo de Semáforo Inteligente</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">2° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Habilidades:</strong><br>
+                            - Programação de Microcontroladores (Arduino / ESP32)<br>
+                            - Lógica de Maquinaria de Estados (State Machines)<br>
+                            - Montagem de Circuitos e Sinalização Eletrônica<br><br>
+                            <strong>Descrição:</strong> Construção de um circuito eletrônico físico para representar o funcionamento e a temporização de um semáforo inteligente, utilizando um microcontrolador para programar e controlar a sequência de acendimento dos LEDs.
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; align-items: center; justify-content: center;">
+                        <div style="position: relative; width: 100%; aspect-ratio: 16/9; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe src="https://www.youtube.com/embed/nkRhrmmJBz4?si=pMayFsaI2fonfsn8" title="Protótipo de Semáforo Inteligente" frameborder="0" style="position: absolute; width: 100%; height: 125%; top: -20%; left: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-slide" style="display: none; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">IoT</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 34px;">Controle Básico de Saída Digital — Ligar LED</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">2° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Habilidades:</strong><br>
+                            - Configuração de Pinos GPIO de Saída<br>
+                            - Eletrônica Digital e Dimensionamento de Resistores<br>
+                            - Estrutura de Firmware Embarcado em C/C++<br><br>
+                            <strong>Descrição:</strong> Desenvolvimento de um projeto introdutório de automação utilizando microcontrolador, com configuração de pinos digitais para controlar o acionamento e o tempo de funcionamento de um LED.
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; align-items: center; justify-content: center;">
+                        <div style="position: relative; width: 100%; aspect-ratio: 16/9; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
+                            <iframe src="https://www.youtube.com/embed/j95tsOfhthg?si=heRE-Hd2-27Mi5UZ" title="Controle Básico de Saída Digital — Ligar LED" frameborder="0" style="position: absolute; width: 100%; height: 125%; top: -20%; left: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-slide" style="display: none; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">IoT</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 32px;">Controle de LED com Botão (Lógica Toggle Interativa)</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">2° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Habilidades:</strong><br>
+                            - Leitura de Entradas Digitais &amp; Debounce por Software<br>
+                            - Lógica de Alternância de Estado (Toggle Flip-Flop)<br>
+                            - Controle Reativo em Sistemas Embarcados<br><br>
+                            <strong>Descrição:</strong> Desenvolvimento de um projeto de controle de LED utilizando um push-button, em que cada toque alterna o estado da luz. Também foi applied o debounce para evitar falhas causadas pelo ruído mecânico do botão.
+                        </p>
+                        <div class="carousel-nav">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; flex-direction: column; justify-content: center;">
+                        <div style="position: relative; width: 100%; aspect-ratio: 9/16; max-height: 80%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; margin: 0 auto;">
+                            <iframe src="https://www.youtube.com/embed/KcOSBOOBPlU" title="Controle de LED com Botão" frameborder="0" style="position: absolute; width: 100%; height: 120%; top: -15%; left: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </div>
+                        <a href="https://youtube.com/shorts/KcOSBOOBPlU?si=dp7LeyS45tanhJSD" target="_blank" rel="noopener" style="color: var(--bg-white); text-decoration: underline; font-size: 14px; margin-top: 10px; text-align: center;">Assistir no YouTube</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Programação de Aplicativos 1° Trimestre -->
+    <div id="modalProgApp1" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Programação de Aplicativos</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 48px;">Desenvolvimento de Apps</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            Projetos e desenvolvimento de aplicações web e mobile no 1° trimestre.
+                        </p>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; align-items: center; justify-content: center;">
+                        <p style="color: var(--bg-white); font-family: var(--font-main); text-align: center;">Atividades do 1° trimestre</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Programação de Aplicativos 2° Trimestre -->
+    <div id="modalProgApp2" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
+                
+                <!-- Slide 1 -->
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Programação de Aplicativos</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 38px;">Desafio BP Web — Plataforma IoT &amp; Web API</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">2° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Habilidades:</strong><br>
+                            - Desenvolvimento Web Front-end &amp; Back-end<br>
+                            - Consumo de APIs REST e comunicação HTTP<br>
+                            - Deploy e hospedagem de aplicações em nuvem (Render)<br><br>
+                            <strong>Descrição:</strong> Desenvolvimento de um projeto prático de integração entre sistemas embarcados e uma plataforma web, com criação de rotas para o envio e recebimento de dados de telemetria e publicação da aplicação na nuvem utilizando a Render.
+                        </p>
+                        <div class="carousel-nav" style="display: none;">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <a href="https://rinhasenai2026-ngji.onrender.com/" target="_blank" rel="noopener" style="position: relative; width: 100%; height: 80%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; display: block;">
+                            <iframe src="https://rinhasenai2026-ngji.onrender.com/" title="Desafio BP Web" frameborder="0" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; pointer-events: none;"></iframe>
+                        </a>
+                        <a href="https://rinhasenai2026-ngji.onrender.com/" target="_blank" rel="noopener" style="color: var(--bg-white); text-decoration: underline; font-size: 16px; margin-top: 15px; font-weight: bold;">Acessar Plataforma Web (Render)</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Desenvolvimento de Sistemas 1° Trimestre (Grand Prix) -->
     <div id="projectModal" class="modal-overlay">
         <div class="modal-box">
             <span class="close-modal">&times;</span>
@@ -79,10 +279,10 @@
                 <!-- Slide 1 -->
                 <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
                     <div class="hero-text-side">
-                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Sistemas</span>
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Desenvolvimento de Sistemas</span>
                         <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 64px;">Grand Prix</h2>
                         <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
-                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">SENAI</h3>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">1° TRIMESTRE</h3>
                         <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
                             Pitch Grand Prix. Realizamos um projeto do SENAI de Inovação chamado grand prix, onde solucionamos um desafio designado a nossa equipe. Nosso desafio foi da Petrobras Descarbonização, Eficiência Energética e Performance Sustentável. O Grand Prix SENAI 2026 é uma competição de inovação aberta que une criatividade, colaboração e empreendedorismo para enfrentar desafios reais propostos por empresas e organizações.<br><br>
                             Link do <a href="https://canva.link/sjpoqmpefi54brm" target="_blank" style="color: var(--bg-white); text-decoration: underline;">Lean Canva</a>
@@ -94,14 +294,48 @@
                     </div>
                     <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; align-items: center; justify-content: center;">
                         <div style="position: relative; width: 100%; aspect-ratio: 16/9; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden;">
-                            <iframe src="https://www.youtube.com/embed/CZZmJzWEinw?si=dRH4DRLXIRHUCazU" title="YouTube video player" frameborder="0" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <iframe src="https://www.youtube.com/embed/CZZmJzWEinw?si=dRH4DRLXIRHUCazU" title="YouTube video player" frameborder="0" style="position: absolute; width: 100%; height: 125%; top: -20%; left: 0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </div>
 
-
+    <!-- Modal Desenvolvimento de Sistemas 2° Trimestre -->
+    <div id="modalDevSist2" class="modal-overlay">
+        <div class="modal-box">
+            <span class="close-modal">&times;</span>
+            <div class="modal-content-bakery carousel-container" style="width: 100%; height: 100%;">
                 
+                <!-- Slide 1 -->
+                <div class="carousel-slide active" style="display: flex; align-items: center; justify-content: space-between; height: 100%; width: 100%;">
+                    <div class="hero-text-side">
+                        <span class="badge" style="background: var(--bg-white); color: var(--accent-brown);">Desenvolvimento de Sistemas</span>
+                        <h2 class="hero-title" style="color: var(--bg-white); font-family: var(--font-title); font-size: 38px;">Desafio BP Web — Plataforma IoT &amp; Web API</h2>
+                        <div class="hero-divider" style="background-color: var(--bg-white); height: 2px; width: 150px; margin: 15px 0;"></div>
+                        <h3 class="hero-subtitle" style="color: var(--bg-white); font-family: var(--font-main); font-size: 24px; letter-spacing: 2px;">2° TRIMESTRE</h3>
+                        <p class="hero-description" style="color: var(--bg-creme); font-family: var(--font-main); line-height: 1.6; margin-bottom: 20px;">
+                            <strong>Habilidades:</strong><br>
+                            - Desenvolvimento Web Front-end &amp; Back-end<br>
+                            - Consumo de APIs REST e comunicação HTTP<br>
+                            - Deploy e hospedagem de aplicações em nuvem (Render)<br><br>
+                            <strong>Descrição:</strong> Desenvolvimento de um projeto prático de integração entre sistemas embarcados e uma plataforma web, com criação de rotas para o envio e recebimento de dados de telemetria e publicação da aplicação na nuvem utilizando a Render.
+                        </p>
+                        <div class="carousel-nav" style="display: none;">
+                            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+                            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="hero-image-side" style="flex: 1.2; height: 100%; padding: 10px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <a href="https://rinhasenai2026-ngji.onrender.com/" target="_blank" rel="noopener" style="position: relative; width: 100%; height: 80%; box-shadow: 0 4px 15px rgba(0,0,0,0.3); border-radius: 12px; overflow: hidden; display: block;">
+                            <iframe src="https://rinhasenai2026-ngji.onrender.com/" title="Desafio BP Web" frameborder="0" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; pointer-events: none;"></iframe>
+                        </a>
+                        <a href="https://rinhasenai2026-ngji.onrender.com/" target="_blank" rel="noopener" style="color: var(--bg-white); text-decoration: underline; font-size: 16px; margin-top: 15px; font-weight: bold;">Acessar Plataforma Web (Render)</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
